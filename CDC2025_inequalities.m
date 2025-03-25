@@ -18,7 +18,7 @@ lmiterm([8 1 1 Psi],.5*e3*Gamma,1,'s'); lmiterm([9 1 1 Psi],.5*e4*Gamma,1,'s');
 lmiterm([-6 1 1 0],e1*Theta); lmiterm([-7 1 1 0],e2*Theta);
 lmiterm([-8 1 1 0],e3*Theta); lmiterm([-9 1 1 0],e4*Theta);
 LM1=getlmis;[tmin,xfeas] = feasp(LM1, [0 1000 1e22 0 0]); 
-%if tmin < 0, then the inequalities (4.9) is feasible
+%if tmin < 0, then the inequalities (14) is feasible
 PS1 = [1 0 0 0 0]*dec2mat(LM1,xfeas,Psi); 
 PS2 = [0 1 0 0 0]*dec2mat(LM1,xfeas,Psi);
 PS3 = [0 0 1 0 0]*dec2mat(LM1,xfeas,Psi);
